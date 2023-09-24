@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pritashna</title>
+<Link href="style.css" rel="stylesheet" type="text/css" /> 
+<style>
+
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Slice of Italy</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+<div class="w3-content w3-section" style="max-width:500px">
+ <img class="mySlides" src="images/blues1.jpg" style="width:100%"> 
+ <img class="mySlides" src="images/blues2.jpg" style="width:100%">
+ <img class="mySlides" src="images/blues3.jpg" style="width:100%">
+ <img class="mySlides" src="images/blues4.jpg" style="width:100%">
+  <img class="mySlides" src="images/opera_house01_tnf.jpg" style="width:100%">
+ <img class="mySlides" src="images/surfers_tallest_building_tnf.jpg" style="width:100%">
+ <img class="mySlides" src="images/sydney_city01_tnf.jpg" style="width:100%">
+</div>
+<h1>Slice of Italy</h1>
+<p>My first paragraph.</p>
+<img src="images/opera_house01_tnf.jpg" alt="operahouse" width="806.4" height="604.8">
+<img src="images/surfers_tallest_building_tnf.jpg" alt="surferstallestbuilding" width="806.4" height="604.8">
+<img src="images/sydney_city01_tnf.jpg" alt="sydneycity" width="806.4" height="604.8">
+<footer>Please call us on ph;0800 225 612 if you need further tutorials on html or css.Email: iris.athena@irena.com</footer> 
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+<footer>
+  <p>Author: Pritashna Kishore</p>
+  <p><a href="mailto:sliceofitaly@gmail.com">sliceofitaly@gmail.com</a></p>
+</footer>
+</body>
+</html>
+
+
